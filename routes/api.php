@@ -36,6 +36,7 @@ Route::delete('abogados/{abogado}', 'AbogadoController@delete');
 
 // crud Horarios
 Route::get('horarios', 'HorarioController@getAll');
+Route::get('horarios-tipoabogado/{horario}', 'HorarioController@getHorarioTipo');
 Route::get('horarios/{horario}', 'HorarioController@getById');
 Route::post('horarios', 'HorarioController@create');
 Route::put('horarios/{horario}', 'HorarioController@update');
